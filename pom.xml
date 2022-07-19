@@ -56,7 +56,7 @@
                                 </executions>
                                 <configuration>
                                     <serverId>nexus</serverId>
-                                    <nexusUrl>http://ec2-34-222-157-166.us-west-2.compute.amazonaws.com:8081/</nexusUrl>
+                                    <nexusUrl>http://ec2-34-220-188-219.us-west-2.compute.amazonaws.com:8081/</nexusUrl>
                                     <skipStaging>true</skipStaging>
                                 </configuration>
                         </plugin>
@@ -67,7 +67,7 @@
 	<distributionManagement>
           <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>http://ec2-34-222-157-166.us-west-2.compute.amazonaws.com:8081/repository/test-repo/</url>
+            <url>http://ec2-34-220-188-219.us-west-2.compute.amazonaws.com:8081/repository/test-repo/</url>
           </snapshotRepository>
         </distributionManagement>
 
