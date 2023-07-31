@@ -4,7 +4,7 @@ node {
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/harshalkathar/myfirstapp.git']]])      
         }
    
-   stage ('Build') {
+   stage ('Builds') {
          def mvnHome = tool name: 'maven', type: 'maven'
          def mvnCMD = "${mvnHome}/bin/mvn "
          sh "${mvnCMD} clean package"           
